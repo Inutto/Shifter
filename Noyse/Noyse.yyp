@@ -34,7 +34,7 @@
             "Key": "0753ae24-163c-4df7-9e70-ddec1ba9ae19",
             "Value": {
                 "id": "2ef1195c-4bdb-4664-8ad3-45e62932ebdf",
-                "resourcePath": "scripts\\draw_infor\\draw_infor.yy",
+                "resourcePath": "scripts\\draw_infor_2d\\draw_infor_2d.yy",
                 "resourceType": "GMScript"
             }
         },
