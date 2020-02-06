@@ -1,32 +1,22 @@
-/// @description Insert description here
+/// @description Input manager
 // You can write your code in this editor
 
 
 // overall settings
-gamepad_set_axis_deadzone(0, 0.5);
-
-test = 1;
+//gamepad_set_axis_deadzone(0, 0.5);
 
 
-// key settings
-var up_key = ord("W");
-var down_key = ord("W");
-var left_key = ord("W");
-var right_key = ord("W");
+enum inputMode {keyboard, gamepad};
 
-// button settings
+g_inputMode = 0;   // by default, keyboard
 
-haxis = gamepad_axis_value(0, gp_axislh);
-vaxis = gamepad_axis_value(0, gp_axislv);
+// input value
+h_value = 0;
+v_value = 0;
 
+// input key
+up = 0;
+down = 0;
+left = 0;
+right = 0;
 
-// key bindings
-up = keyboard_check_pressed(up_key);
-down = keyboard_check_pressed(down_key);
-left = keyboard_check_pressed(left_key);
-right = keyboard_check_pressed(right_key);
-
-
-// controller bindings
-
-//a = gamepad_button_check_pressed(gp_face1)

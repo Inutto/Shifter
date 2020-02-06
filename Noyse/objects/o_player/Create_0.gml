@@ -3,15 +3,16 @@
 
 
 // gamepad check and control
-if(!gamepad_is_connected(0)){
-	show_message("Not Connected");
+if(gamepad_is_connected(0)){
+	show_debug_message("Connected Slot 0: ");
+	show_debug_message(gamepad_get_description(0));
+	show_debug_message(gamepad_get_device_count());	
 }
 
 
-show_message(string(o_Input.test));
+//testMessage = 1000;
+//var testMessage = o_Input.test;
 
-haxis = o_Input.haxis;
-vaxis = o_Input.vaxis;
+//show_message(testMessage);
 
 
-//Test Github~
