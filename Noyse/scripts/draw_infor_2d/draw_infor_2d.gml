@@ -23,7 +23,7 @@ var num_check = array_length_1d(array_value)
 var s = min(num, num_check);
 
 for (var i = 0; i < s; i = i+1){
-	draw_text(xx,yy + i * padding,string(array_key[i]) + "  " + string(array_value[i]));
+	draw_text(xx,yy + i * padding,string(array_key[i]) + ":  " + string(array_value[i]));
 }
 
 // if num of key and value are not differnet, print error message

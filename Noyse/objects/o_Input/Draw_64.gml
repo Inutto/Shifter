@@ -4,15 +4,17 @@
 
 // show input message
 
-
-draw_text(room_width - 50,100,h_value);
-draw_text(room_width - 50,200,v_value);
-
-/*
-draw_text(100,100,"    speed: "+string(speed));
-draw_text(100,200,"direction: "+string(direction));
-draw_text(100,300,"inputMode: "+string(g_inputMode));
-*/
+show_console(room_width * 3/4, room_height * 3/4, false);
+if(gamepad_is_connected(0)){
+	show_console_message("Connected Slot 0: ");
+	show_debug_message(gamepad_get_description(0));
+	show_debug_message(gamepad_get_device_count());	
+}
 
 
-draw_infor_2d(100,100,["speed: ", "direction: ", "inputMode: "], [speed, direction, g_inputMode], 30);
+// draw input information
+draw_infor_2d(
+	100,100,
+	["h_value", "v_value", "inputMode"], 
+	[h_value, v_value, g_inputMode], 
+	30);

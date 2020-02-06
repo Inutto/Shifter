@@ -6,6 +6,7 @@
 //gamepad_set_axis_deadzone(0, 0.5);
 
 
+
 enum inputMode {keyboard, gamepad};
 
 g_inputMode = 0;   // by default, keyboard

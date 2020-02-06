@@ -18,7 +18,7 @@ switch (g_inputMode){
 
 		// movement value
 		h_value = right - left;
-		v_value = up - left;		
+		v_value = down - up;		
 	break;
 
 	// gamepad
