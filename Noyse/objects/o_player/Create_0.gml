@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 
+// gamepad check and control
 if(!gamepad_is_connected(0)){
 	show_message("Not Connected");
 }
