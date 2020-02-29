@@ -7,8 +7,8 @@
 show_console(room_width * 3/4, room_height * 3/4, false);
 if(gamepad_is_connected(0)){
 	show_console_message("Connected Slot 0: ");
-	show_debug_message(gamepad_get_description(0));
-	show_debug_message(gamepad_get_device_count());	
+	//show_debug_message(gamepad_get_description(0));
+	//show_debug_message(gamepad_get_device_count());	
 }
 
 
